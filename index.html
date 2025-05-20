@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felipe Figueiras</title>
+    <style>
+    body{ background-color: lightsalmon;} 
+    h1 {background-color: aqua; text-align: center;}
+    p { font-size: 1,4em; text-align: justify; line-height: 1.7;}
+    ul li { margin-bottom: 60px;}
+    #imagem {width: 500px;border-radius: 25px;display: block;margin: 20px auto}
+    a{ color: brown;}
+    a:hover{color: aqua;}   
+    </style>     
+</head>
+<body>
+ <h1>Felipe Figueiras Ribeiro</h1>
+ <p>Meu nome é Felipe Figueiras Ribeiro, tenho 23 anos, moro em Nitéroi RJ, sou apaixonado em games, esportes e programas ao ar livre.</p>    
+<button id="botao">Clique para ver uma mensagem!</button>
+<p id="frase"></p>
+<ul>
+    <li>Jogar video games</li>
+    <li>Jogar futebol</li>
+    <li>Viajar</li>
+</ul>
+<img id="imagem" src="https://brubrinq.com.br/wp-content/uploads/2020/09/AAprN5o-1024x728.jpg" > 
+<h2>Países para visitar </h2>
+<table border="4">
+<tr>  
+    <th>Estados Unidos</th>
+    <th><img src= "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a4/Flag_of_the_United_States.svg/1920px-Flag_of_the_United_States.svg.png" alt="Estados Unidos" width="100" height="60"></th>
+</tr>
+<tr>
+    <th>Argentina</th>
+    <th><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1a/Flag_of_Argentina.svg/1200px-Flag_of_Argentina.svg.png" alt="Argentina" width="100" height="60"></th>
+</tr>
+<tr>
+    <th>Russia</th>
+    <th> <img src= https://upload.wikimedia.org/wikipedia/commons/thumb/f/f3/Flag_of_Russia.svg/1920px-Flag_of_Russia.svg.png alt="Russia" width="100" height="60"></th>
+</tr>
+</table>         
+<p>Site sobre notícias do vasco da gama: <a href="https://www.netvasco.com.br/" target="_blank">netvasco</a><p>
+<script>
+    const bt = document.getElementById('botao');
+    const frase = document.getElementById('frase');
+    function VisualizarMensagem() {
+        frase.innerText = "Bem vindo!"; 
+    }
+    bt.addEventListener('click', VisualizarMensagem);  
+</script>    
+</body>
+</html>    
